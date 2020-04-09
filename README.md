@@ -16,5 +16,6 @@ Some projects are really cool and other projects are garbage. They are all here.
 ### Never to See the Light of Day
 [DotPuzzle](https://github.com/BricksAndPieces/IOS-Portfolio/tree/master/DotPuzzle)  
 [ScoutScanner](https://github.com/BricksAndPieces/IOS-Portfolio/tree/master/Scout%20Scanner)  
-
+  
+  
 Apps by Ishan Shetty
