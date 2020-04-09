@@ -8,7 +8,7 @@ Some projects are really cool and other projects are garbage. They are all here.
 [QuizApp](https://github.com/BricksAndPieces/IOS-Portfolio/tree/master/QuizApp)  
 [WarCardGame](https://github.com/BricksAndPieces/IOS-Portfolio/tree/master/WarCardGame)  
 [Marble-Maze](https://github.com/BricksAndPieces/IOS-Portfolio/tree/master/Marble-Maze)  
-[EpicPong](https://github.com/BricksAndPieces/IOS-Portfolio/tree/master/EpicPong4)  
+[EpicPong](https://github.com/BricksAndPieces/IOS-Portfolio/tree/master/EpicPong)  
 
 ### Currently Working On
 [Shape Slide](https://github.com/BricksAndPieces/IOS-Portfolio/tree/master/Shape%20Slide)  
