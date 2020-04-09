@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DY5-W3-TFG">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="dlO-Qk-yit">
+            <objects>
+                <viewController title="Main Controller" id="DY5-W3-TFG" customClass="MainController" customModule="Scout_Scanner" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ici-hz-n56">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Talon Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Iqa-u4-bcJ">
+                                <rect key="frame" x="107" y="235" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Ogf-qq-3Dq"/>
+                                    <constraint firstAttribute="width" constant="200" id="rOs-cg-YYn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIt-jo-58s">
+                                <rect key="frame" x="87" y="443" width="240" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.27156708646839378" blue="0.248473672630384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="2zb-71-xeI"/>
+                                    <constraint firstAttribute="height" constant="50" id="85o-zT-IJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Go to QR Scanner">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="DY5-W3-TFG" eventType="touchUpInside" id="s6c-ZY-a2e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IOS Scouting Scanner v1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STK-hw-4NH">
+                                <rect key="frame" x="106" y="518" width="202" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vIt-jo-58s" firstAttribute="top" secondItem="Iqa-u4-bcJ" secondAttribute="bottom" constant="8" id="0g2-xJ-1UQ"/>
+                            <constraint firstItem="STK-hw-4NH" firstAttribute="top" secondItem="vIt-jo-58s" secondAttribute="bottom" constant="25" id="29H-hk-lib"/>
+                            <constraint firstItem="vIt-jo-58s" firstAttribute="centerX" secondItem="Ici-hz-n56" secondAttribute="centerX" id="CB4-Mt-g8T"/>
+                            <constraint firstItem="Iqa-u4-bcJ" firstAttribute="centerX" secondItem="Ici-hz-n56" secondAttribute="centerX" id="OjW-57-qNS"/>
+                            <constraint firstItem="STK-hw-4NH" firstAttribute="centerX" secondItem="Ici-hz-n56" secondAttribute="centerX" id="l8t-R5-dL6"/>
+                            <constraint firstItem="vIt-jo-58s" firstAttribute="centerY" secondItem="Ici-hz-n56" secondAttribute="centerY" constant="20" id="u9S-hP-ODc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i1a-Uu-0TN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7zj-Wx-5dy"/>
+                    <connections>
+                        <segue destination="wqO-4X-31Z" kind="presentation" identifier="toQRCode" modalPresentationStyle="fullScreen" id="0Ct-fn-hz1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8y-gF-MTa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="802.90178571428567"/>
+        </scene>
+        <!--QR Code Controller-->
+        <scene sceneID="udN-rB-W0A">
+            <objects>
+                <viewController title="QR Code Controller" id="wqO-4X-31Z" customClass="QRCodeController" customModule="Scout_Scanner" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fpa-RV-Rgm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJ6-W5-lkj">
+                                <rect key="frame" x="10" y="812" width="394" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.2715670865" blue="0.2484736726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jiz-wq-rde"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wr-p9-r2a">
+                                <rect key="frame" x="40" y="84" width="80" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.2715670865" blue="0.2484736726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AKB-bG-jit"/>
+                                    <constraint firstAttribute="width" constant="80" id="rqk-Pq-npk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="wqO-4X-31Z" eventType="touchUpInside" id="Y7x-Ah-I9p"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Aiming Icon" translatesAutoresizingMaskIntoConstraints="NO" id="KOk-dO-1Pg">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="TPX-3B-zQB"/>
+                                    <constraint firstAttribute="height" constant="300" id="hKZ-8u-J97"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6wr-p9-r2a" firstAttribute="leading" secondItem="hIa-uC-NAZ" secondAttribute="leading" constant="40" id="1PB-zM-7ad"/>
+                            <constraint firstItem="kJ6-W5-lkj" firstAttribute="bottom" secondItem="hIa-uC-NAZ" secondAttribute="bottom" id="1X1-Np-fRY"/>
+                            <constraint firstItem="KOk-dO-1Pg" firstAttribute="centerY" secondItem="fpa-RV-Rgm" secondAttribute="centerY" id="1Zk-Tc-FcY"/>
+                            <constraint firstItem="hIa-uC-NAZ" firstAttribute="trailing" secondItem="kJ6-W5-lkj" secondAttribute="trailing" constant="10" id="2Qx-oI-HlG"/>
+                            <constraint firstItem="KOk-dO-1Pg" firstAttribute="centerX" secondItem="fpa-RV-Rgm" secondAttribute="centerX" id="9a6-gv-tNS"/>
+                            <constraint firstItem="kJ6-W5-lkj" firstAttribute="leading" secondItem="hIa-uC-NAZ" secondAttribute="leading" constant="10" id="bLu-5A-Rjc"/>
+                            <constraint firstItem="kJ6-W5-lkj" firstAttribute="centerX" secondItem="fpa-RV-Rgm" secondAttribute="centerX" id="nhA-TV-dqL"/>
+                            <constraint firstItem="6wr-p9-r2a" firstAttribute="top" secondItem="hIa-uC-NAZ" secondAttribute="top" constant="40" id="uJr-MK-AMw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hIa-uC-NAZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wwu-Ra-VgY"/>
+                    <connections>
+                        <outlet property="aimingIcon" destination="KOk-dO-1Pg" id="UX0-fG-uNa"/>
+                        <outlet property="backButton" destination="6wr-p9-r2a" id="m8b-l6-dhj"/>
+                        <outlet property="messageLabel" destination="kJ6-W5-lkj" id="qkW-oP-5fI"/>
+                        <segue destination="DY5-W3-TFG" kind="presentation" modalPresentationStyle="fullScreen" id="BCx-wa-vaw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVx-35-Dnq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="803"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Aiming Icon" width="465" height="570"/>
+        <image name="Talon Logo" width="63.333332061767578" height="63.333332061767578"/>
+    </resources>
+</document>
