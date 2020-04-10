@@ -11,6 +11,14 @@ My name is Ishan Shetty and I am a junior at Eden Prairie High School.
 I like Computer Science and know a variety of languages such as java, javascript, python, C#, and more recently, swift.
 I mainly program in java and have a lot of other repositiories with java projects such as a [Neural Network that learns to play Snake using a Genetic Algorithm](https://github.com/BricksAndPieces/Neural-Network-Framework), [Various Pathfinding Algorithms (with Maze Generation)](https://github.com/BricksAndPieces/PathFinding), and a [Flocking Simulation (with Quadtree implementation)](https://github.com/BricksAndPieces/Boids-Ecosystem) to name a few. All my projects can be found on [github](https://github.com/BricksAndPieces?tab=repositories). Some of my projects can are also viewable on my [youtube channel](https://www.youtube.com/channel/UC4hKlJOW9oR7HF80PxTBaew).
 
+### Known Languages
+* Java - Skilled
+* C# - Proficient
+* HTML - Proficient
+* Swift - Decent
+* JavaScript - Decent
+* Python - Decent  
+
 ## IOS Apps
 
 ### Completed Apps
