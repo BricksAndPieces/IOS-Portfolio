@@ -17,10 +17,10 @@ Unfortunately, after all my work, I learnt that the game wasn't really that fun 
 I decided to drop the project and start something new because I didn't want to spend any longer on it.
 The game is in a playable state and no bugs have been detected (yet).
 
-# Learnt
+### Learnt
 * Physics with Spritekit
 * Maze Generation
 * Cool Algorithm for combining cells
 
-# Time Spent
+### Time Spent
 Around 1 week
