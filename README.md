@@ -3,6 +3,7 @@ A portfolio of all my IOS and swift shenanigans that I created in IOS Developmen
 All projects are linked below with the state of completeness (more info availible in project readme's).
 This repository includes all my projects that I made in XCode using swift in class.
 Some projects are really cool and other projects are garbage. They are all here.  
+  
 Note: Other IOS projects that were made after this class will also be linked below but are not part of this repository.
 
 ### Completed Projects
