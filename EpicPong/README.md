@@ -10,6 +10,7 @@ I like the way Unity handles physics alot better.
 * SpriteKit for games
 * Physics in swift (sorta)
 * Basic game states
+* User Input
 
 ### Time Spent
 Around 3 days
