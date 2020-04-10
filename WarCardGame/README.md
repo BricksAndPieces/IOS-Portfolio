@@ -10,6 +10,8 @@ I also learned how to make UI in a ViewController and make it scale according to
 * How to use XCode
 * How to create UI in a ViewController
 * How to set UI size based on device
+* User Input
+* Swift Random
 
 ### Time Spent
 Less than 1 day
