@@ -16,8 +16,8 @@ I mainly program in java and have a lot of other repositiories with java project
 * C# - Proficient
 * HTML - Proficient
 * Swift - Decent
-* JavaScript - Decent
-* Python - Decent  
+* JavaScript - Ok
+* Python - Ok  
 
 ## IOS Apps
 
@@ -26,6 +26,7 @@ I mainly program in java and have a lot of other repositiories with java project
 [WarCardGame](https://github.com/BricksAndPieces/IOS-Portfolio/tree/master/WarCardGame)  
 [Marble-Maze](https://github.com/BricksAndPieces/IOS-Portfolio/tree/master/Marble-Maze)  
 [EpicPong](https://github.com/BricksAndPieces/IOS-Portfolio/tree/master/EpicPong)  
+[Maze Escape](https://github.com/BricksAndPieces/maze/tree/master)  
 
 ### Currently Working On
 [Shape Slide](https://github.com/BricksAndPieces/IOS-Portfolio/tree/master/Shape%20Slide)  
